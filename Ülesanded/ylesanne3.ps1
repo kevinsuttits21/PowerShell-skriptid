@@ -33,7 +33,7 @@ function Translit {
 
 }
 
-# do while loop
+
 foreach ($user in $users) {
     try {
         $firstName = $user.FirstName.ToLower()
