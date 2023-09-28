@@ -1,4 +1,4 @@
-﻿# check if C:\Backup is real and if it isnt then create it
+# check if C:\Backup is real and if it isnt then create it
 $sourceDirectory = "C:\Users"
 $destinationPath = "C:\Backup"
 
@@ -14,6 +14,11 @@ if (-not (Test-Path -Path $destinationPath -PathType Container)) {
 }
 
 
+# day, month and year
+$currentDate = Get-Date
+$day = $currentDate.Day
+$month = $currentDate.Month
+$year = $currentDate.Year
 # kontrolli kasutajate olemasolu süsteemis ja igale kasutajale loome tema kodukataloogile varunduse, mis asub C:\Backup kasutas (ZIP)
 # varunaduse loomisel iga kasutaja kodukataloog peab olema varundatud nimeha kasutajanimi-PP.MM.YYYY.zip
 
@@ -23,7 +28,8 @@ $folders = Get-ChildItem -Path $sourceDirectory -Directory
 foreach ($folder in $folders) {
     $userName = $folder.Name
     if ($userName -ne "Public") {
-    $backupFileName = "$destinationPath\$userName.zip"
+    $date = $userName + "-" + $day + "." + $month + "." + $year
+    $backupFileName = "$destinationPath\$date.zip"
  
     Compress-Archive -Path $folder.FullName -DestinationPath $backupFileName -Force
     Write-Host "Backup created for $userName - $backupFileName"
