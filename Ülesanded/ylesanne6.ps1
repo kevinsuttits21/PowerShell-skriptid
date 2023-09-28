@@ -1,7 +1,7 @@
-# check if C:\Backup is real and if it isnt then create it
+
 $sourceDirectory = "C:\Users"
 $destinationPath = "C:\Backup"
-
+# kontrolli asukohta ja loo kui vaja
 if (-not (Test-Path -Path $destinationPath -PathType Container)) {
     try {
         New-Item -Path $destinationPath -ItemType Directory -Force
@@ -14,7 +14,7 @@ if (-not (Test-Path -Path $destinationPath -PathType Container)) {
 }
 
 
-# day, month and year
+# päev, kuu ja aasta
 $currentDate = Get-Date
 $day = $currentDate.Day
 $month = $currentDate.Month
@@ -26,12 +26,21 @@ $year = $currentDate.Year
 $folders = Get-ChildItem -Path $sourceDirectory -Directory
 
 foreach ($folder in $folders) {
-    $userName = $folder.Name
-    if ($userName -ne "Public") {
-    $date = $userName + "-" + $day + "." + $month + "." + $year
-    $backupFileName = "$destinationPath\$date.zip"
- 
-    Compress-Archive -Path $folder.FullName -DestinationPath $backupFileName -Force
-    Write-Host "Backup created for $userName - $backupFileName"
+    $foldername = $folder.Name
+    if ($foldername -ne "Public") {
+       
+        $destinationFolder = Join-Path -Path $destinationPath -ChildPath $foldername
+
+        Copy-Item -Path $folder.FullName -Destination $destinationFolder -Recurse -Force
+
+        $date = $foldername + "-" + $day + "." + $month + "." + $year
+        $backupFileName = Join-Path -Path $destinationPath -ChildPath "$date.zip"
+
+       
+        Compress-Archive -Path $destinationFolder -DestinationPath $backupFileName -Force
+
+        Remove-Item -Path $destinationFolder -Recurse -Force
+
+        Write-Host "Backup created for $foldername - $backupFileName"
     }
 }
