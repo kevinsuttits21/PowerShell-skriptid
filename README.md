@@ -54,15 +54,15 @@ https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powers
 * [__kaheteistkymnespt2.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/Powershellforbeginners/kaheteistkymnespt2.ps1) - Veel üks Function harjutus
 * [__kolmteist.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/Powershellforbeginners/kolmteist.ps1) - Suurem kalkulaator (PINDALATE JAOKS!)
 
-  ### Praktikum1
-  * [__args.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/Praktikum1/args.ps1) - Args'i õppimiseks mõeldud skript
-  * [__kasutajaloomine.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/Praktikum1/kasutajaloomine.ps1) - Lihtne lokaalse kasutaja loomiseks mõeldud skript
-  * [__kasutajateskript.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/Praktikum1/kasutajateksript.ps1) - Skript, mille põhimõte on CSV faili abil luua lokaalseid kasutajaid
-  * [__taiendus1.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/Praktikum1/taiendus1.ps1) - Käsurea parameetrite abil kasutaja loomiseks mõeldud skript
-  * [__taiendus2.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/Praktikum1/taiendus2.ps1) - Args'ide abil kasutaja loomiseks mõeldud skript
+### Praktikum1
+* [__args.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/Praktikum1/args.ps1) - Args'i õppimiseks mõeldud skript
+* [__kasutajaloomine.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/Praktikum1/kasutajaloomine.ps1) - Lihtne lokaalse kasutaja loomiseks mõeldud skript
+* [__kasutajateskript.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/Praktikum1/kasutajateksript.ps1) - Skript, mille põhimõte on CSV faili abil luua lokaalseid kasutajaid
+* [__taiendus1.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/Praktikum1/taiendus1.ps1) - Käsurea parameetrite abil kasutaja loomiseks mõeldud skript
+* [__taiendus2.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/Praktikum1/taiendus2.ps1) - Args'ide abil kasutaja loomiseks mõeldud skript
 
-  ### Praktikum2
-  * [__create_ad_users.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/Praktikum2/create_ad_users.ps1) - Skript, mille põhimõte on CSV faili abil luua AD kasutajaid
+### Praktikum2
+* [__create_ad_users.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/Praktikum2/create_ad_users.ps1) - Skript, mille põhimõte on CSV faili abil luua AD kasutajaid
 
 ### Ülesanded
 * [__ylesanne1.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/%C3%9Clesanded/ylesanne1.ps1) - Täiendatud lokaalsete kasutajate loomise skript
