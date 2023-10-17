@@ -71,3 +71,4 @@ https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powers
 * [__ylesanne4.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/%C3%9Clesanded/ylesanne4.ps1) - Skript, mille põhimõte on kustutada AD kasutajaid
 * [__ylesanne5.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/%C3%9Clesanded/ylesanne5.ps1) - Täiendatud AD kasutajate loomise skript
 * [__ylesanne6.ps1__](https://github.com/kevinsuttits21/Powershell-skriptid/blob/main/%C3%9Clesanded/ylesanne6.ps1) - Skript, mille põhimõte on luua varundusi AD kasutajate kodukataloogidest
+* * [__ylesanne7.ps1__](https://github.com/kevinsuttits21/PowerShell-skriptid/blob/main/%C3%9Clesanded/ylesanne7.ps1) - Skript, mille põhimõte on näidata soovitud AD kasutaja andmeid
